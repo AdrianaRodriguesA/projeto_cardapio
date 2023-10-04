@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(31, 166, 130);
+    text-shadow: 1px 1px rgb(20, 65, 59);
+    text-align: center;
+    background-color: rgb(219, 192, 35, 0.3); 
+}
+/* cabeçalho */
+.container{
+    display: flex;
+    background-color: rgb(166, 65, 80);
+    justify-content: space-around;
+}
+.container .logo img {
+    width: 85%;
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px rgb(34, 34, 34));
+}
+.container .nomeempresa h1{
+    font-size: 40px;
+    padding: 40px 10px;
+    text-shadow: 3px 3px rgb(20, 65, 59);
+}
+.container .menu nav{
+    display: flex;
+    flex-direction: column;
+}
+a{
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    background-color: rgba(46, 13, 26, 0.267);
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(29, 110, 88);
+    transition: 0.5s;
+}
+/* botões */
+.btn-escolha{
+    background-color: rgb(31, 166, 130);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px rgb(20, 65, 59);
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 19px;
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(36, 43, 37, 0.6);
+}
+.btn-escolha:hover{
+    background-color: rgba(29, 110, 88);
+    box-shadow: 2px 2px rgb(31, 166, 130);
+    transition: 0.5s;
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(36, 43, 37, 0.6);
+}
+/* imagem e slogan */
+#slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#slogan .slogan img{
+    width: 90%;
+    box-shadow: 2px 2px rgb(29, 110, 88);
+    border-radius: 10px;
+    cursor: vertical-text;
+}
+#slogan .slogan img:hover{
+    opacity: 0.8;
+}
+#slogan h2 { 
+    width: 80%;
+    font-size: 40px;
+    background-color: rgb(184, 84, 99);
+    border-radius: 10px;
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(36, 43, 37, 0.6);
+}
+/* opções do cardápio */
+#cardapio h2 {
+    width: 40%;
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: rgb(184, 84, 99);
+    border-radius: 10px;
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(36, 43, 37, 0.6);
+}
+#foto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.item {
+    width: 33%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.no {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item h3{
+    font-size: 30px;
+    background-color: rgb(184, 84, 99);
+    border-radius: 10px;
+    padding: 0px 30px;
+    border: solid rgb(237, 221, 221);
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(36, 43, 37, 0.6);
+}
+#foto .item img{
+    width: 50%;
+    box-shadow: 2px 2px rgb(29, 110, 88);
+    border-radius: 20px;
+    cursor: vertical-text;
+}
+#foto .item img:hover{
+    opacity: 0.8;
+}
+footer{
+    text-align: center;
+    background-color: rgb(166, 65, 80);
+}
+p{
+    font-size: 15px;
+    font-weight: bold;
+}
+hr {
+    margin-left: 35%;
+    width: 30%;
+    opacity: 0.5;
+}
+footer span h6 {
+    text-align: center;
+    background-color: rgb(112, 109, 110);
+    color: rgb(252, 245, 247);
+    font-weight: 100;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .container .nomeempresa h1 {
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 10px 5px;
+    }
+    .container .logo img {
+        width: 70%;
+    }
+    a {
+        font-size: 15px;
+        margin-right: 30px;
+    }
+    .btn-escolha {
+        font-size: 13px;
+        padding: 5px 5px;
+        margin-right: 5px;
+    }
+    #slogan h2 { 
+        width: 90%;
+        font-size: 25px;
+    }
+    #cardapio h2 {
+        width: 30%;
+        font-size: 30px;
+    }
+    .item {
+        height: 50vh;
+    }
+    .item h3{
+        font-size: 18px;
+    }
+}
+@media (max-width: 700px) {
+    .item {
+        height: 45vh;
+    }
+    #foto .item img{
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    .container .logo img {
+        width: 50%;
+    }
+    .container .nomeempresa h1 {
+        margin-top: 0;
+        font-size: 20px;
+        padding: none;
+    }
+    .container .menu nav{
+        display: none;
+        flex-direction: none;
+    } 
+    .btn-escolha {
+        margin-top: 20px;
+    }
+    #slogan h2 { 
+        width: 90%;
+        font-size: 20px;
+    }
+    #cardapio h2 {
+        width: 70%;
+        font-size: 25px;
+    }
+    .item {
+        height: 45vh;
+        width: 80%;
+    }
+    .item h3{
+        width: 70%;
+    } 
+    .no {
+        display: flex;
+        flex-direction: row;
+    }
+    #foto {
+        flex-direction: column;
+        align-items: center;
+    }
+    #foto .item img{
+        width: 30%;
+        padding: 0;
+    }
+    p{
+        font-size: 10px;
+        font-weight: none;
+    }
+    footer span h6 {
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .item {
+        height: 35vh;
+    }
+    #foto .item img{
+        width: 30%;
+    }
+}
